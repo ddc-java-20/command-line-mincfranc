@@ -26,23 +26,37 @@ public class Main {
   }
   // LOOKING AT THE LENGTH OF THE STRING OF THE ARRAY NOT AT THE ARRAY ITSELF
 
+/** this allows java doc to identify comments for extraction
+*/
+
+
+/**
+ * Returns a case-modified version of {@code input}. If
+ * the length is even, a lowercase version is returned, otherwise, an uppercase version is 
+ * returned.
+ * 
+ * @param input {@link String} to be re-cased.
+ * @return Re-cased version of {@code input}.
+ */
   private static String caseByLength(String input) {
-    String output;
+    // String output;
 
     // Use the length and content of input to assign the correct value to output.
     //  -Odd length: Uppercase;
     //  -Even-length: Lowercase.
 
-    if (input.length() % 2 == 0) {
-      output = input.toLowerCase();
-    } else {
-      output = input.toUpperCase();
-    }
+    // if (input.length() % 2 == 0) {
+    //   output = input.toLowerCase();
+    // } else {
+    //   output = input.toUpperCase();
+    // }
 
-    return output;
+    // return output;
+
+    return (input.length() % 2 == 0) ? input.toLowerCase() : input.toUpperCase();
 
   }
-
-
-
+ 
 }
+
+
